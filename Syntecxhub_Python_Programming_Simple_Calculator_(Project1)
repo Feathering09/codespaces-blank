@@ -1,0 +1,24 @@
+import math
+
+while True:
+    num1 = input("Enter your first (1st) number :")
+    num2 = input("Enter your second (2nd) number :")
+    num1=float(num1)
+    num2=float(num2)
+    #VALID
+    calc = input("Enter this operator you want to use (only +, -,÷, x are valid) :")
+    if calc == "+" or "add":
+        answer=num1+num2
+    elif calc=="-" or "subtract" or "minus":
+        answer=num1-num2
+    elif calc=="x" or "X" or "*" "multuply":
+        answer=num1*num2
+    elif calc=="÷" or"divide" or"/":
+        answer=num1/num2
+    #INVALID
+    else:
+        print("your number/s are invalid, please try again!")
+    print("You wanted to: ",num1,calc,num2," = ",answer)
+    if num1 or num2 or calc == "s" or "stop" or"exit":
+        break
+#Get it to accept +,-,×,÷, hse same variable for all results,  use a while true loop and if either stop or break is entered then the program will stop accepting nbers and oing calculations, it repeats8
